@@ -148,7 +148,7 @@ sudo chown ec2-user:ec2-user /mnt/db_data
 sudo mkdir -p /mnt/db_data/postgresql
 git clone https://github.com/amilaresidovic/projekat_2.git /home/ec2-user/projekat2
 cd /home/ec2-user/projekat2
-sudo ln -s /mnt/db_data/postgresql /home/ec2-user/projekat_2/db_data
+sudo ln -s /mnt/db_data/postgresql /home/ec2-user/projekat2/db_data
 sudo docker-compose build
 sudo docker-compose up -d
 echo "Završetak User Data skripte" >> /var/log/user-data.log
